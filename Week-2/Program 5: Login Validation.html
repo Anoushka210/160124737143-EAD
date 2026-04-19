@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<h2>Login Page</h2>
+
+<input type="text" id="user" placeholder="Username"><br><br>
+<input type="password" id="pass" placeholder="Password"><br><br>
+
+<button onclick="check()">Login</button>
+
+<script>
+function check() {
+  let u = document.getElementById("user").value;
+  let p = document.getElementById("pass").value;
+
+  if(u === "admin" && p === "1234") {
+    alert("Login Successful");
+  } else {
+    alert("Invalid Details");
+  }
+}
+</script>
+
+</body>
+</html>
